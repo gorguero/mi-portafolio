@@ -1,0 +1,23 @@
+{
+  "name": "mi-portafolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorguero/mi-portafolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gorguero/mi-portafolio/issues"
+  },
+  "homepage": "https://github.com/gorguero/mi-portafolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
