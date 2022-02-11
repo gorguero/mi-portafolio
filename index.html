@@ -23,7 +23,7 @@
 
             <div class="container">
 
-                <span class="navbar-brand fs-2 text-white text-uppercase lh-lg">Bienvenid@s a mi portafolio</span>
+                <p class="navbar-brand fs-2 text-white text-uppercase lh-lg">Bienvenid@s a mi portafolio</p>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,15 +55,15 @@
         </nav>
     </header>
 
-    <div class="container-fluid" >
-
-        <!-- Seccion sobre mi -->
-        <section class="row bg-danger" style="height: 500px;">
+    <!-- Seccion sobre mi -->
+    <div class="container-fluid bg-danger pb-4 pt-4">
+        
+        <section class="row">
 
             <!-- Mi Perfil -->
-            <div class="col-12 col-lg-4 border border-2 border-primary" style="height: 500px;">
+            <div class="col-12 col-lg-4" >
 
-                <div class="mx-auto my-5" style="width: 20rem;">
+                <div class="mx-auto my-4" style="width: 20rem;">
 
                     <img src="img/perfil.png" class="card-img-top rounded-circle" alt="Imagen de perfil">
 
@@ -79,26 +79,96 @@
             </div>
 
             <!-- Sobre Mi -->
-            <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center border border-2 border-primary ">
+            <div class="col-12 col-lg-8 d-flex align-items-center justify-content-center">
 
                 <div class="ms-4">
 
-                    <p class="fs-1 fw-bold text-uppercase ">Sobre mi</p>
+                    <p class="fs-1 fw-bold text-uppercase">Sobre mi</p>
 
-                    <p class="fs-4 sobre-mi">
+                    <p class="fs-4 sobre-mi ">
                         <span class="ms-3 ">Estoy</span> cursando el ultimo año de la tecnicatura en desarrollo de software en el Instituto Superior San Martin.
                         Estoy aprendiendo sobre desarrollo web front-end. 
                         Actualmente realizo proyectos con HTML5, CSS3, Javascript, Bootstrap, Git.
                         Con muchas ganas de seguir aprendiendo. de poder lograr mi primera experiencia laboral como desarrollador front-end y crecer en lo profesional en la industria del software.
                     </p>
 
-                    <a href="#">Informacion de contacto</a>
+                    <a href="#" class="link-dark text-decoration-none fs-5 ">Informacion de contacto</a>
 
                 </div>
 
             </div>
 
         </section>
+
+    </div>
+
+    <!-- Seccion educacion y experiencia laboral -->
+    <div class="container-fluid">
+
+        <div class="row" style="height: 450px;">
+
+            <!-- Educación -->
+            <section class="col-12 col-lg-6 bg-success">
+
+                <p class="display-5 ms-5 my-4 text-center text-uppercase lh-lg">Educación</p>
+                
+                <article class="d-flex justify-content-evenly ">
+
+                    <img src="img/LOGO-NUEVO-WEB.png" alt="Logo Instituto San Martin" style="width: 10rem;">
+
+                    <div class="text-center py-1">
+                        
+                        <p class="fs-5 fw-bold pt-2">Instituto Superior General San Martin</p>
+
+                        <p class="fst-italic fw-bold">Técnico Superior en Desarrollo de Software</p>
+
+                        <p>2019 - 2022</p>
+
+                    </div>
+
+                </article>
+
+                <hr class="w-25 mx-auto">
+                
+                <article class="d-flex justify-content-evenly mt-2">
+
+                    <img src="img/logo-udemy.png" alt="Logo udemy" style="width: 10rem;">
+
+                    <div class="text-center py-4 w-50">
+                        
+                        <a href="https://www.udemy.com/course/master-en-css-responsive-sass-flexbox-grid-y-boostrap-4/" target="_BLANK"
+                        class="fs-5 fw-bold link-dark text-decoration-none">Master en CSS: Responsive, SASS, Flexbox, Grid y Bootstrap</a>
+
+                        <p class="pt-3">Dic - 2021</p>
+
+                    </div>
+
+                </article>
+
+                <hr class="w-25 mx-auto">
+
+                <article class="d-flex justify-content-evenly mt-2">
+
+                    <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1643935033/APLogo-20-20.png" alt="Logo Argentina Programa" style="width: 10rem;">
+
+                    <div class="text-center py-4 w-50">
+                        
+                        <p class="fs-5 fw-bold pt-2">Argentina Programa: #SéProgramar</p>
+
+                        <p class="pt-2">Dic - 2021</p>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- Experiencia laboral -->
+            <section class="col-12 col-lg-6 border border-3 border-info bg-primary">
+
+            </section>
+
+        </div>
 
     </div>
 
