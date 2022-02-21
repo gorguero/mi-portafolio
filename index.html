@@ -12,15 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="sass/custom.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="bg-gradient">
 
     <!-- Encabezado -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
             <div class="container">
 
@@ -58,7 +59,7 @@
 
     <main>
         <!-- Seccion sobre mi -->
-        <div class="container-fluid bg-danger pb-4 pt-4">
+        <div class="container-fluid pb-4">
 
             <section class="row">
 
@@ -97,7 +98,82 @@
                             desarrollador front-end y crecer en lo profesional en la industria del software.
                         </p>
 
-                        <a href="#" class="link-dark text-decoration-none fs-5 ">Informacion de contacto</a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Información de contacto
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-white" id="exampleModalLabel">¡Contáctame!</h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                        <article class="d-flex align-items-center mt-3">
+
+                                            <img src="img/linkedin-icon.png" alt="" width="40px" height="40px">
+                    
+                                            <div class="text-center py-1 ms-3">
+                    
+                                                <a href="https://www.linkedin.com/in/juan-cruz-ag%C3%BCero/" 
+                                                class="fs-5 fw-bold text-white text-decoration-none"  target="_blank">Juan Cruz Agüero Luna</a>
+                    
+                                            </div>
+                    
+                                        </article>
+
+                                        <article class="d-flex align-items-center mt-3">
+
+                                            <img src="img/github2.png" alt="" width="40px" height="40px">
+                    
+                                            <div class="text-center py-1 ms-3">
+                    
+                                                <a href="https://github.com/gorguero" 
+                                                class="fs-5 fw-bold text-white text-decoration-none" target="_blank">gorguero</a>
+                    
+                                            </div>
+                    
+                                        </article>
+
+                                        <article class="d-flex align-items-center mt-3">
+
+                                            <img src="img/gmail.png" alt="" width="40px" height="40px">
+                    
+                                            <div class="text-center py-1 ms-3">
+                    
+                                                <p class="fs-5 fw-bold text-white text-decoration-none">jcaguerodev@gmail.com</p>
+                    
+                                            </div>
+                    
+                                        </article>
+
+                                        <article class="d-flex align-items-center mt-3">
+
+                                            <img src="img/telefono.png" alt="" width="40px" height="40px">
+                    
+                                            <div class="text-center py-1 ms-3">
+                    
+                                                <p class="fs-5 fw-bold text-white text-decoration-none">+543834403372</p>
+                    
+                                            </div>
+                    
+                                        </article>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-info"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -113,9 +189,11 @@
             <div class="row">
 
                 <!-- Educación -->
-                <section class="col-12 col-lg-6 bg-success">
+                <section class="col-12 col-lg-6">
 
-                    <p class="display-5 ms-5 my-4 text-center text-uppercase lh-lg">Educación</p>
+                    <hr class="w-75 mx-auto my-4 border border-1 border-dark opacity-75">
+
+                    <p class="display-5 ms-5 my-4 fw-bold text-center text-uppercase lh-lg">Educación</p>
 
                     <article class="d-flex justify-content-evenly ">
 
@@ -171,9 +249,12 @@
                 </section>
 
                 <!-- Experiencia laboral -->
-                <section class="col-12 col-lg-6 bg-primary">
+                <section class="col-12 col-lg-6">
 
-                    <p class="display-5 ms-5 my-4 text-center text-uppercase lh-lg">Experiencia laboral</p>
+                    <hr class="w-75 mx-auto my-4 border border-1 border-dark opacity-75">
+
+
+                    <p class="display-5 ms-5 my-4 text-center text-uppercase lh-lg fw-bold">Experiencia laboral</p>
 
                     <article class="d-flex justify-content-evenly mt-2">
 
@@ -202,11 +283,13 @@
     </main>
 
     <!-- Seccion habilidades -->
-    <section class="container-fluid bg-danger pb-5">
+    <section class="container-fluid pb-5">
 
         <div class="row pt-4">
 
-            <p class="display-5 my-4 text-center text-uppercase lh-lg">Soft Skills</p>
+            <hr class="w-25 mx-auto my-4 border border-1 border-dark opacity-75">
+
+            <p class="display-5 my-4 fw-bold text-center text-uppercase lh-lg">Soft Skills</p>
 
             <!-- Soft Skills -->
             <article class="col-12 col-lg-6">
@@ -214,40 +297,45 @@
                 <div class="container w-75">
                     <p class="fs-4">Comunicación:</p>
                     <div class="progress mb-4">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 85%">85%</div>
                     </div>
                 </div>
 
                 <div class="container w-75 mb-4">
                     <p class="fs-4">Creatividad:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 80%">80%</div>
                     </div>
                 </div>
 
                 <div class="container w-75 mb-4">
                     <p class="fs-4">Proactivo:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">87%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 87%">87%</div>
                     </div>
                 </div>
 
                 <div class="container w-75 mb-4">
                     <p class="fs-4">Trabajo en equipo:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 90%">90%</div>
                     </div>
                 </div>
 
                 <div class="container w-75 mb-4">
                     <p class="fs-4">Inglés:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">35%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 35%">35%</div>
                     </div>
                 </div>
 
@@ -258,40 +346,45 @@
                 <div class="container w-75 mb-4">
                     <p class="fs-4">Adaptabilidad:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 85%">85%</div>
                     </div>
                 </div>
 
                 <div class="container w-75 mb-4">
                     <p class="fs-4">Motivación:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 100%">100%</div>
                     </div>
                 </div>
 
                 <div class="container w-75 mb-4">
                     <p class="fs-4">Compromiso:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 100%">100%</div>
                     </div>
                 </div>
 
                 <div class="container w-75 mb-4">
                     <p class="fs-4">Resolución de problemas:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 75%">75%</div>
                     </div>
                 </div>
 
                 <div class="container w-75 mb-4">
                     <p class="fs-4">Puntualidad:</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width: 97%">97%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                            role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 97%">97%</div>
                     </div>
                 </div>
 
@@ -302,13 +395,15 @@
     </section>
 
     <!-- Seccion Tecnologías -->
-    <section class="container-fluid pb-5 bg-info">
+    <section class="container-fluid pt-5" style="height: 600px;">
 
-        <p class="display-5 pt-5 text-center text-uppercase lh-lg">Tecnologías</p>
+        <hr class="w-25 mx-auto my-4 border border-1 border-dark opacity-75">
+
+        <p class="display-5 pt-3 text-center text-uppercase lh-lg fw-bold">Tecnologías</p>
 
         <div class="row">
 
-            <article class="col d-flex justify-content-center flex-wrap">
+            <article class="col d-flex justify-content-center flex-wrap mt-2">
 
                 <img src="img/html5 (1).png" class="img-thumbnail mx-3 mt-3 img-fluid" alt="...">
 
@@ -327,9 +422,11 @@
     </section>
 
     <!-- Seccion Proyectos -->
-    <section class="container-fluid bg-warning pb-5">
+    <section class="container-fluid pb-5">
 
-        <p class="display-5 pt-5 pb-5 text-center text-uppercase lh-lg">Proyectos</p>
+        <hr class="w-25 mx-auto my-4 border border-1 border-dark opacity-75">
+
+        <p class="display-5 pb-5 text-center text-uppercase lh-lg fw-bold">Proyectos</p>
 
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
             <div class="col">
@@ -337,11 +434,13 @@
                     <img src="img/portada-BienesRaices.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Proyecto Bienes Raices</h5>
-                        <p class="card-text">Es una página web sobre bienes raices desarrollada a modo de práctica. La misma
+                        <p class="card-text">Es una página web sobre bienes raices desarrollada a modo de práctica. La
+                            misma
                             cuenta con una landing page, sección de nosotros, anuncios, blog y contacto.
                         </p>
                         <p>Desarrollada con: HTML5 - CSS3.</p>
-                        <a href="https://thirsty-galileo-74f5f7.netlify.app/" target="_BLANK" class="stretched-link"></a>
+                        <a href="https://thirsty-galileo-74f5f7.netlify.app/" target="_BLANK"
+                            class="stretched-link"></a>
                     </div>
                 </div>
             </div>
@@ -350,8 +449,10 @@
                     <img src="img/portada-kondur.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Kondur Skateboards</h5>
-                        <p class="card-text">Página web en proceso de desarrollo para la marca de tablas de skate catamarqueña Kondur Skateboards.
-                            Cuenta con página principal, sección para ver sus productos, información sobre el team, contenido audiovisual o "checks" y página de contacto.
+                        <p class="card-text">Página web en proceso de desarrollo para la marca de tablas de skate
+                            catamarqueña Kondur Skateboards.
+                            Cuenta con página principal, sección para ver sus productos, información sobre el team,
+                            contenido audiovisual o "checks" y página de contacto.
                         </p>
                         <p>Desarrollada con: HTML5 - CSS3.</p>
                         <a href="https://blissful-yalow-9bfcae.netlify.app/" target="_blank" class="stretched-link"></a>
@@ -366,7 +467,8 @@
                         <p class="card-text">Página web sobre cursos de desarrollo web, desarrollada a modo de práctica.
                         </p>
                         <p>Desarrollado con: HTML5 - CSS3 - Responsive Design.</p>
-                        <a href="https://mystifying-curie-dc835e.netlify.app/" target="_blank" class="stretched-link"></a>
+                        <a href="https://mystifying-curie-dc835e.netlify.app/" target="_blank"
+                            class="stretched-link"></a>
                     </div>
                 </div>
             </div>
@@ -375,9 +477,11 @@
                     <img src="img/portada-mail.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Envio de mails</h5>
-                        <p class="card-text">Landing page desarrollada a modo de práctica, en donde simula el envio de emails.</p>
+                        <p class="card-text">Landing page desarrollada a modo de práctica, en donde simula el envio de
+                            emails.</p>
                         <p>Desarrollado con: HTML5 - CSS3 - Bootstrap 5 - Javascript.</p>
-                        <a href="https://xenodochial-shaw-f7eb85.netlify.app/" target="_blank" class="stretched-link"></a>
+                        <a href="https://xenodochial-shaw-f7eb85.netlify.app/" target="_blank"
+                            class="stretched-link"></a>
                     </div>
                 </div>
             </div>
@@ -387,11 +491,13 @@
                     <img src="img/portada-buscadorAutos.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Buscador de Autos</h5>
-                        <p class="card-text">Landing page desarrollada a modo de práctica, donde se puede filtrar la busqueda de autos que se 
+                        <p class="card-text">Landing page desarrollada a modo de práctica, donde se puede filtrar la
+                            busqueda de autos que se
                             encuentren en alquiler o en venta.
                         </p>
                         <p>Desarrollado con: HTML5 - CSS3 - Bootstrap 5 - Javascript.</p>
-                        <a href="https://heuristic-lewin-8e0ee3.netlify.app/" target="_blank" class="stretched-link"></a>
+                        <a href="https://heuristic-lewin-8e0ee3.netlify.app/" target="_blank"
+                            class="stretched-link"></a>
                     </div>
                 </div>
             </div>
@@ -401,11 +507,13 @@
                     <img src="img/portada-twits.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Twits</h5>
-                        <p class="card-text">Landing page desarrollada a modo de práctica, donde se puede escribir un "twit" y se mostrara a un
+                        <p class="card-text">Landing page desarrollada a modo de práctica, donde se puede escribir un
+                            "twit" y se mostrara a un
                             constado al presionar el boton "agregar".
                         </p>
                         <p>Desarrollada con: HTML5 - CSS3 - Bootstrap 5 - Javascript.</p>
-                        <a href="https://jolly-engelbart-d1de53.netlify.app/" target="_blank" class="stretched-link"></a>
+                        <a href="https://jolly-engelbart-d1de53.netlify.app/" target="_blank"
+                            class="stretched-link"></a>
                     </div>
                 </div>
             </div>
@@ -414,7 +522,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="container-fluid bg-dark ">
+    <footer class="container-fluid bg-dark">
         <div class="row pt-5">
             <p class="text-center text-white fs-4">Desarrollado por Juan Cruz Agüero Luna</p>
             <p class="text-center text-white fs-5 mb-4">&copy;Todos los derechos reservados</p>
