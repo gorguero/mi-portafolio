@@ -28,13 +28,14 @@ function validarCampos(e){
             error.remove();
         }
 
-        e.target.classList.add('border', 'border-4', 'border-success');
         e.target.classList.remove('border-danger');
+        e.target.classList.add('border', 'border-4', 'border-success');
+        
 
     }else{ //Si esta vacio
 
-        e.target.classList.add('border', 'border-4', 'border-danger');
         e.target.classList.remove('border-success');
+        e.target.classList.add('border', 'border-4', 'border-danger');
 
         mostrarMensajeError('Todos los campos son obligatorios');
 
@@ -47,9 +48,8 @@ function validarCampos(e){
         btnIniciarSesion.disabled = false;
 
     }else{
-
+        
         btnIniciarSesion.disabled = true;
-        mostrarMensajeError('Todos los campos son obligatorios');
 
     }
 
