@@ -163,15 +163,18 @@
                             <div class="modal-dialog">
                                 <div class="modal-content bg-dark">
                                     <div class="modal-header">
-                                        <h5 class="modal-title text-white" id="staticBackdropLabel">Edición sobre mi</h5>
+                                        <h5 class="modal-title text-white" id="staticBackdropLabel">Edición sobre mi
+                                        </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label text-white-50">Ingrese breve biografía</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                          </div>
+                                            <label for="exampleFormControlTextarea1"
+                                                class="form-label text-white-50">Ingrese breve biografía</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
@@ -351,8 +354,116 @@
                     </article>
 
                     <div class="d-flex justify-content-evenly mt-4">
-                        <i class="bi bi-plus-circle-fill fs-1"></i>
-                        <i class="bi bi-pencil-fill fs-1"></i>
+                        <!-- Button trigger modal de agregar educacion-->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#btnAgregarEducación">
+                            <i class="bi bi-plus-circle-fill fs-1"></i>
+                        </button>
+
+                        <!-- Button trigger modal de editar educacion-->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#btnEditarEducación">
+                            <i class="bi bi-pencil-fill fs-1"></i>
+                        </button>
+
+                        <!-- Modal para agregar educación -->
+                        <div class="modal fade" id="btnAgregarEducación" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="agregarEducaciónLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-white" id="agregarEducaciónLabel">Agregar una nueva
+                                            educación</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label text-white-50">Cargar
+                                                    logo</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Nombre del curso o
+                                                    institutción:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria el nombre de institutción">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Titulo:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria el titulo">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Fecha de finalización:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria la fecha de finalización">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agregar
+                                            nueva educación</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal para editar educación -->
+                        <div class="modal fade" id="btnEditarEducación" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="editarEducaciónLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-white" id="editarEducaciónLabel">Editar una
+                                            educación</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label text-white-50">Nro
+                                                de articulo educativo a editar:</label>
+                                            <input type="number" class="form-control" id="exampleFormControlInput1">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label text-white-50">Cargar logo</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label text-white-50">Nombre del curso o
+                                                institutción:</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Aqui iria el nombre de institutción">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label text-white-50">Titulo:</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Aqui iria el titulo">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label text-white-50">Fecha
+                                                de finalización:</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Aqui iria la fecha de finalización">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Actualizar educación</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </section>
@@ -386,8 +497,124 @@
                     </article>
 
                     <div class="d-flex justify-content-evenly mt-4 align-text-bottom">
-                        <i class="bi bi-plus-circle-fill fs-1"></i>
-                        <i class="bi bi-pencil-fill fs-1"></i>
+
+                        <!-- Button trigger modal de agregar experiencia laboral-->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#btnAgregarExpLaboral">
+                            <i class="bi bi-plus-circle-fill fs-1"></i>
+                        </button>
+                        <!-- Button trigger modal de editar experiencia laboral-->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#btnEditarExpLaboral">
+                            <i class="bi bi-pencil-fill fs-1"></i>
+                        </button>
+
+                        <!-- Modal para agregar experiencia laboral -->
+                        <div class="modal fade" id="btnAgregarExpLaboral" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="agregarExpLaboralLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-white" id="agregarExpLaboralLabel">Agregar una nueva
+                                            experiencia laboral</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label text-white-50">Cargar
+                                                    logo</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Nombre de la empresa:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria el nombre la empresa">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Cargo:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria el cargo">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Fecha en el cargo:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria la fecha del cargo">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Ubicación de la empresa:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria la ubicacion de la empresa">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agregar
+                                            nueva experiencia</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal para editar experiencia laboral -->
+                        <div class="modal fade" id="btnEditarExpLaboral" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="editarExpLaboralLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-white" id="editarExpLaboralLabel">Editar experiencia
+                                            laboral</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label text-white-50">Cargar
+                                                    logo</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Nombre de la empresa:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria el nombre la empresa">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Cargo:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria el cargo">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Fecha en el cargo:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria la fecha del cargo">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label text-white-50">Ubicación de la empresa:</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="Aqui iria la ubicacion de la empresa">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Actualizar experiencia laboral</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </section>
@@ -518,8 +745,74 @@
             </article>
 
             <div class="d-flex justify-content-evenly mt-5">
-                <i class="bi bi-plus-circle-fill fs-1"></i>
-                <i class="bi bi-pencil-fill fs-1"></i>
+
+                <!-- Button trigger modal de agregar soft skill-->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnAgregarSoftSkill">
+                    <i class="bi bi-plus-circle-fill fs-1"></i>
+                </button>
+
+                <!-- Button trigger modal de editar soft skill-->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnEditarSoftSkill">
+                    <i class="bi bi-pencil-fill fs-1"></i>
+                </button>
+
+                <!-- Modal agregar soft skill -->
+                <div class="modal fade" id="btnAgregarSoftSkill" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="btnAgregarSoftSkillLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-white" id="btnAgregarSoftSkillLabel">Agregar nueva Soft Skill</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label text-white-50">Ingrese skill</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label text-white-50">Ingrese nro de nivel de conocimiento</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agregar soft skill</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal editar soft skill -->
+                <div class="modal fade" id="btnEditarSoftSkill" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="btnEditarSoftSkillLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-white" id="btnEditarSoftSkillLabel">Editar nueva Soft Skill</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label text-white-50">Nro
+                                        de skill a editar:</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label text-white-50">Ingrese skill</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label text-white-50">Ingrese nro de nivel de conocimiento</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Actualizar soft skill</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -557,7 +850,31 @@
         </div>
 
         <div class="d-flex justify-content-center mt-5">
-            <i class="bi bi-plus-circle-fill fs-1"></i>
+            <!-- Button trigger modal de agregar tecnologia-->
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnAgregarTecnologia">
+                <i class="bi bi-plus-circle-fill fs-1"></i>
+            </button>
+            <!-- Modal de agregar tecnologia -->
+            <div class="modal fade" id="btnAgregarTecnologia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="btnAgregarTecnologiaLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-white" id="AgregarTecnologiaLabel">Agregar nueva tecnología</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label text-white-50">Cargar logo de tecnología</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agregar tecnología</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -583,8 +900,55 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-evenly mt-3">
-                    <i class="bi bi-pencil-fill fs-2"></i>
-                    <i class="bi bi-x-circle-fill fs-2"></i>
+
+                    <!-- Button Modal Editar Proyecto -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnEditarProyecto">
+                        <i class="bi bi-pencil-fill fs-2"></i>
+                    </button>
+
+                    <!-- Modal de Editar Proyecto -->
+                    <div class="modal fade" id="btnEditarProyecto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="editarProyectoLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-white" id="editarProyectoLabel">Editar proyecto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Nro de proyecto a editar</label>
+                                        <input class="form-control" type="number" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Cargar imagen del proyecto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Titulo del proyecto</label>
+                                        <input class="form-control" type="" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Descripción del proyecto</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Tecnologías del proyecto</label>
+                                        <input class="form-control" type="text" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Actualizar proyecto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Eliminar Proyecto -->
+                    <button type="button" class="btn btn-dark">
+                        <i class="bi bi-x-circle-fill fs-2"></i>
+                    </button>
+                    
                 </div>
             </div>
             <div class="col">
@@ -601,8 +965,55 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-evenly mt-3">
-                    <i class="bi bi-pencil-fill fs-2"></i>
-                    <i class="bi bi-x-circle-fill fs-2"></i>
+
+                    <!-- Button Modal Editar Proyecto -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnEditarProyecto">
+                        <i class="bi bi-pencil-fill fs-2"></i>
+                    </button>
+
+                    <!-- Modal de Editar Proyecto -->
+                    <div class="modal fade" id="btnEditarProyecto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="editarProyectoLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-white" id="editarProyectoLabel">Editar proyecto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Nro de proyecto a editar</label>
+                                        <input class="form-control" type="number" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Cargar imagen del proyecto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Titulo del proyecto</label>
+                                        <input class="form-control" type="" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Descripción del proyecto</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Tecnologías del proyecto</label>
+                                        <input class="form-control" type="text" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Actualizar proyecto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Eliminar Proyecto -->
+                    <button type="button" class="btn btn-dark">
+                        <i class="bi bi-x-circle-fill fs-2"></i>
+                    </button>
+                    
                 </div>
             </div>
             <div class="col">
@@ -616,8 +1027,55 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-evenly mt-3">
-                    <i class="bi bi-pencil-fill fs-2"></i>
-                    <i class="bi bi-x-circle-fill fs-2"></i>
+
+                    <!-- Button Modal Editar Proyecto -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnEditarProyecto">
+                        <i class="bi bi-pencil-fill fs-2"></i>
+                    </button>
+
+                    <!-- Modal de Editar Proyecto -->
+                    <div class="modal fade" id="btnEditarProyecto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="editarProyectoLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-white" id="editarProyectoLabel">Editar proyecto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Nro de proyecto a editar</label>
+                                        <input class="form-control" type="number" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Cargar imagen del proyecto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Titulo del proyecto</label>
+                                        <input class="form-control" type="" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Descripción del proyecto</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Tecnologías del proyecto</label>
+                                        <input class="form-control" type="text" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Actualizar proyecto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Eliminar Proyecto -->
+                    <button type="button" class="btn btn-dark">
+                        <i class="bi bi-x-circle-fill fs-2"></i>
+                    </button>
+                    
                 </div>
             </div>
             <div class="col">
@@ -631,8 +1089,55 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-evenly mt-3">
-                    <i class="bi bi-pencil-fill fs-2"></i>
-                    <i class="bi bi-x-circle-fill fs-2"></i>
+
+                    <!-- Button Modal Editar Proyecto -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnEditarProyecto">
+                        <i class="bi bi-pencil-fill fs-2"></i>
+                    </button>
+
+                    <!-- Modal de Editar Proyecto -->
+                    <div class="modal fade" id="btnEditarProyecto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="editarProyectoLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-white" id="editarProyectoLabel">Editar proyecto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Nro de proyecto a editar</label>
+                                        <input class="form-control" type="number" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Cargar imagen del proyecto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Titulo del proyecto</label>
+                                        <input class="form-control" type="" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Descripción del proyecto</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Tecnologías del proyecto</label>
+                                        <input class="form-control" type="text" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Actualizar proyecto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Eliminar Proyecto -->
+                    <button type="button" class="btn btn-dark">
+                        <i class="bi bi-x-circle-fill fs-2"></i>
+                    </button>
+                    
                 </div>
             </div>
 
@@ -649,8 +1154,55 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-evenly mt-3">
-                    <i class="bi bi-pencil-fill fs-2"></i>
-                    <i class="bi bi-x-circle-fill fs-2"></i>
+
+                    <!-- Button Modal Editar Proyecto -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnEditarProyecto">
+                        <i class="bi bi-pencil-fill fs-2"></i>
+                    </button>
+
+                    <!-- Modal de Editar Proyecto -->
+                    <div class="modal fade" id="btnEditarProyecto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="editarProyectoLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-white" id="editarProyectoLabel">Editar proyecto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Nro de proyecto a editar</label>
+                                        <input class="form-control" type="number" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Cargar imagen del proyecto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Titulo del proyecto</label>
+                                        <input class="form-control" type="" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Descripción del proyecto</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Tecnologías del proyecto</label>
+                                        <input class="form-control" type="text" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Actualizar proyecto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Eliminar Proyecto -->
+                    <button type="button" class="btn btn-dark">
+                        <i class="bi bi-x-circle-fill fs-2"></i>
+                    </button>
+                    
                 </div>
             </div>
 
@@ -666,15 +1218,102 @@
                         <p>Desarrollada con: HTML5 - CSS3 - Bootstrap 5 - Javascript.</p>
                     </div>
                 </div>
-                <div class="d-flex justify-content-evenly mt-3 mb-5">
-                    <i class="bi bi-pencil-fill fs-2"></i>
-                    <i class="bi bi-x-circle-fill fs-2"></i>
+                <div class="d-flex justify-content-evenly mt-3">
+
+                    <!-- Button Modal Editar Proyecto -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnEditarProyecto">
+                        <i class="bi bi-pencil-fill fs-2"></i>
+                    </button>
+
+                    <!-- Modal de Editar Proyecto -->
+                    <div class="modal fade" id="btnEditarProyecto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="editarProyectoLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-white" id="editarProyectoLabel">Editar proyecto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Nro de proyecto a editar</label>
+                                        <input class="form-control" type="number" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Cargar imagen del proyecto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Titulo del proyecto</label>
+                                        <input class="form-control" type="" id="formFile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Descripción del proyecto</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label text-white-50">Tecnologías del proyecto</label>
+                                        <input class="form-control" type="text" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Actualizar proyecto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Eliminar Proyecto -->
+                    <button type="button" class="btn btn-dark">
+                        <i class="bi bi-x-circle-fill fs-2"></i>
+                    </button>
+                    
                 </div>
             </div>
         </div>
 
         <div class="d-flex justify-content-evenly mt-5">
-            <i class="bi bi-plus-circle-fill fs-1"></i>
+
+            <!-- Button trigger modal de agregar Proyecto-->
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btnAgregarProyecto">
+                <i class="bi bi-plus-circle-fill fs-1"></i>
+            </button>
+
+            <!-- Modal de agregar Proyecto -->
+            <div class="modal fade" id="btnAgregarProyecto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="btnAgregarProyectoLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-white" id="AgregarProyectoLabel">Agregar un nuevo proyecto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label text-white-50">Cargar imagen del proyecto</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label text-white-50">Titulo del proyecto</label>
+                                <input class="form-control" type="" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label text-white-50">Descripción del proyecto</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1"rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label text-white-50">Tecnologías del proyecto</label>
+                                <input class="form-control" type="text" id="formFile">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agregar proyecto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
         </div>
 
     </section>
