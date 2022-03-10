@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +16,9 @@
     <link rel="stylesheet" href="sass/custom.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="bg-gradient">
-    
+
     <!-- Encabezado -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -32,9 +34,10 @@
 
                 <div class="collapse navbar-collapse " id="navbarText">
                     <ul class="navbar-nav ms-auto align-items-center">
-                        
+
                         <li class="nav-item d-block align-self-center me-5">
-                            <a href="index.html" class="btn btn-outline-info ms-4 btn-lg w-100" type="button">Volver al inicio</a>
+                            <a href="index.html" class="btn btn-outline-info ms-4 btn-lg w-100" type="button">Volver al
+                                inicio</a>
                         </li>
                     </ul>
 
@@ -53,7 +56,7 @@
 
                 <!-- Mi Perfil -->
                 <div class="col-12 col-lg-4">
-                    
+
                     <div class="mx-auto my-4" style="width: 20rem;" id="seccion-perfil">
 
                         <img src="img/perfil.png" class="card-img-top rounded-circle" alt="Imagen de perfil">
@@ -65,11 +68,57 @@
                             </p>
                             <p class="card-text text-center">Catamarca, Argentina</p>
 
-                        </div>        
-                        
-                        <div class="d-flex justify-content-evenly">
-                            <i class="bi bi-pencil-fill fs-1" id="editar-perfil"></i>
-                            <!-- <i class="bi bi-save-fill fs-1"></i> -->
+                        </div>
+
+                        <!-- Button trigger modal de perfil -->
+                        <div class="col text-center">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#modalPerfil">
+                                Editar perfil
+                            </button>
+                        </div>
+
+                        <!-- Modal de perfil -->
+                        <div class="modal fade" id="modalPerfil" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-white" id="staticBackdropLabel">Edición de perfil
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label text-white-50">Cargar imagen</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label text-white-50">Nombre:</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Aqui iria el nombre">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label text-white-50">Titulación:</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Aqui iria el titulo">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label text-white-50">Ubicación:</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="Aqui iria la ubicacion actual">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Actualizar perfil</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -84,27 +133,56 @@
                         <p class="fs-1 fw-bold text-uppercase">Sobre mi</p>
 
                         <p class="fs-4" style="letter-spacing: 2.5px;">
-                            <span class="ms-3">Soy</span>  un desarrollador web full stack Trainee .
-                            Me encuentro cursando el ultimo año de la tecnicatura en desarrollo de software en el Instituto Superior San Martin y 
+                            <span class="ms-3">Soy</span> un desarrollador web full stack Trainee .
+                            Me encuentro cursando el ultimo año de la tecnicatura en desarrollo de software en el
+                            Instituto Superior San Martin y
                             realizando la segunda etapa de Argentina Programa #YoProgramo. <br>
-                            <span class="ms-3">Tengo</span> disponibilidad full time. <br> 
-                            <span class="ms-3">Soy</span> una persona proactiva con muchas ganas de seguir aprendiendo, de poder aportar en proyectos
-                            desafiantes y en busqueda de mi primera oportunidad laboral como desarrollador, para asi lograr experiencia laboral
+                            <span class="ms-3">Tengo</span> disponibilidad full time. <br>
+                            <span class="ms-3">Soy</span> una persona proactiva con muchas ganas de seguir aprendiendo,
+                            de poder aportar en proyectos
+                            desafiantes y en busqueda de mi primera oportunidad laboral como desarrollador, para asi
+                            lograr experiencia laboral
                             en el mundo del software.
                         </p>
 
-                        <!-- Button trigger modal -->
+                        <!-- Button trigger modal Info de contacto -->
                         <button type="button" class="btn btn-dark" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                            data-bs-target="#modalInfoContacto">
                             Información de contacto
                         </button>
 
-                        <div class="d-flex justify-content-center mt-5">
-                            <i class="bi bi-pencil-fill fs-1"></i>
+                        <!-- Button trigger modal Sobre mi -->
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#modalSobreMi">
+                            Editar "Sobre mi"
+                        </button>
+
+                        <!-- Modal Sobre mi-->
+                        <div class="modal fade" id="modalSobreMi" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-white" id="staticBackdropLabel">Edición sobre mi</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label text-white-50">Ingrese breve biografía</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                          </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Actualizar "Sobre mi"</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <!-- Modal Info de contacto -->
+                        <div class="modal fade" id="modalInfoContacto" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
 
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -112,87 +190,92 @@
                                 <div class="modal-content bg-dark">
 
                                     <div class="modal-header">
-                                        <h5 class="modal-title text-white" id="exampleModalLabel">¡Contáctame!</h5> 
+                                        <h5 class="modal-title text-white" id="exampleModalLabel">¡Contáctame!</h5>
                                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
 
                                     <div class="modal-body">
-                                        
+
                                         <article class="d-flex align-self-center mt-3">
 
                                             <img src="img/linkedin-icon.png" alt="" width="40px" height="40px">
-                    
+
                                             <div class="text-center py-1 ms-3">
-                    
-                                                <a href="https://www.linkedin.com/in/juan-cruz-ag%C3%BCero/" 
-                                                class="fs-5 fw-bold text-white text-decoration-none"  target="_blank">Juan Cruz Agüero Luna</a>
-                    
+
+                                                <a href="https://www.linkedin.com/in/juan-cruz-ag%C3%BCero/"
+                                                    class="fs-5 fw-bold text-white text-decoration-none"
+                                                    target="_blank">Juan Cruz Agüero Luna</a>
+
                                             </div>
 
                                             <i class="bi bi-x-circle-fill text-danger fs-4 ms-5"></i>
-                    
+
                                         </article>
 
                                         <article class="d-flex align-self-center mt-3">
 
                                             <img src="img/github2.png" alt="" width="40px" height="40px">
-                    
+
                                             <div class="text-center py-1 ms-3">
-                    
-                                                <a href="https://github.com/gorguero" 
-                                                class="fs-5 fw-bold text-white text-decoration-none" target="_blank">gorguero</a>
-                    
+
+                                                <a href="https://github.com/gorguero"
+                                                    class="fs-5 fw-bold text-white text-decoration-none"
+                                                    target="_blank">gorguero</a>
+
                                             </div>
 
                                             <i class="bi bi-x-circle-fill text-danger fs-4 ms-5"></i>
-                    
+
                                         </article>
 
                                         <article class="d-flex align-self-center mt-3">
 
                                             <img src="img/gmail.png" alt="" width="40px" height="40px">
-                    
+
                                             <div class="text-center py-1 ms-3">
-                    
-                                                <p class="fs-5 fw-bold text-white text-decoration-none">jcaguerodev@gmail.com</p>
-                    
+
+                                                <p class="fs-5 fw-bold text-white text-decoration-none">
+                                                    jcaguerodev@gmail.com</p>
+
                                             </div>
 
                                             <i class="bi bi-x-circle-fill text-danger fs-4 ms-5"></i>
-                    
+
                                         </article>
 
                                         <article class="d-flex align-self-center mt-3">
 
                                             <img src="img/telefono.png" alt="" width="40px" height="40px">
-                    
+
                                             <div class="text-center py-1 ms-3">
-                    
-                                                <p class="fs-5 fw-bold text-white text-decoration-none ms-2">+543834403372</p>
-                                             
+
+                                                <p class="fs-5 fw-bold text-white text-decoration-none ms-2">
+                                                    +543834403372</p>
+
                                             </div>
 
                                             <i class="bi bi-x-circle-fill text-danger fs-4 ms-5"></i>
-                    
+
                                         </article>
 
                                     </div>
 
                                     <div class="modal-footer d-flex justify-content-evenly">
-                                        <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Agregar</button>
-                                        <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Editar</button>
+                                        <button type="button" class="btn btn-outline-info"
+                                            data-bs-dismiss="modal">Agregar</button>
+                                        <button type="button" class="btn btn-outline-info"
+                                            data-bs-dismiss="modal">Editar</button>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                       
 
-                    </div>                   
+
+                    </div>
 
                 </div>
-                
 
             </section>
 
@@ -252,7 +335,8 @@
 
                     <article class="d-flex justify-content-evenly mt-2 align-items-center">
 
-                        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1643935033/APLogo-20-20.png" alt="Logo Argentina Programa" style="width: 10rem;">
+                        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1643935033/APLogo-20-20.png"
+                            alt="Logo Argentina Programa" style="width: 10rem;">
 
                         <div class="text-center py-4 w-50">
 
@@ -300,14 +384,14 @@
                         <i class="bi bi-x-circle-fill text-danger fs-2"></i>
 
                     </article>
-                    
+
                     <div class="d-flex justify-content-evenly mt-4 align-text-bottom">
                         <i class="bi bi-plus-circle-fill fs-1"></i>
                         <i class="bi bi-pencil-fill fs-1"></i>
                     </div>
 
                 </section>
-                
+
 
             </div>
 
@@ -452,7 +536,7 @@
         <div class="row">
 
             <article class="col d-flex justify-content-center flex-wrap mt-2">
-                
+
                 <i class="bi bi-x-circle-fill text-danger fs-2"></i>
                 <img src="img/html5 (1).png" class="img-thumbnail mx-3 mt-3 img-fluid" alt="...">
 
@@ -590,7 +674,7 @@
         </div>
 
         <div class="d-flex justify-content-evenly mt-5">
-            <i class="bi bi-plus-circle-fill fs-1"></i>           
+            <i class="bi bi-plus-circle-fill fs-1"></i>
         </div>
 
     </section>
@@ -607,4 +691,5 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
 </body>
+
 </html>
